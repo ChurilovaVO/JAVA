@@ -20,6 +20,7 @@ public class Task_4 {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите строку: ");
         String name = iScanner.nextLine();
+        iScanner.close();
         return name;
     }
 }
