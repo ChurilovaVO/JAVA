@@ -32,10 +32,10 @@ public class UserRepository {
     }
 
     public static void CheckFormat(String[] array) throws NumberFormatException, IOException {
-        String suname = null;
-        String name = null;
-        String patronymic = null;
-        String birthday = null;
+        String suname,name,patronymic,birthday= null;
+        //String name = null;
+       // String patronymic = null;
+        //String birthday = null;
         long phoneNumber = 0;
         char gender = '0';
         ArrayList<String> fio = new ArrayList<>(Arrays.asList(array));
@@ -109,6 +109,7 @@ public class UserRepository {
             throw new RuntimeException(e);
         }
         System.out.println("Пользователь успешно сохранен!");
+
     }
 
 

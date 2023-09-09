@@ -9,23 +9,11 @@ public class Main {
         UserView v = new UserView(с);
 //----------------------------------------------------
         v.InputData();
-        for (User item:UserRepository.getUsers()
-             ) {
-            System.out.println(item);
-        }
-        System.out.println(UserRepository.getUsers().size());
+        v.Print(UserRepository.getUsers());
         v.InputData();
-        for (User item:UserRepository.getUsers()
-        ) {
-            System.out.println(item);
-        }
-        System.out.println(UserRepository.getUsers().size());
+        v.Print(UserRepository.getUsers());
         v.InputData();
-        for (User item:UserRepository.getUsers()
-        ) {
-            System.out.println(item);
-        }
-        System.out.println(UserRepository.getUsers().size());
+        v.Print(UserRepository.getUsers());
 
 
 

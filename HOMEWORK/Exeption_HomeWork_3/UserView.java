@@ -1,5 +1,6 @@
 package Exeption_HomeWork_3;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class UserView {
@@ -22,8 +23,11 @@ public class UserView {
 
     }
 
-    public void Print() {
-
+    public static void Print(HashSet <User> users) {
+        for (User item:UserRepository.getUsers()
+        ) {
+            System.out.println(item);
+        }
     }
 
 }
